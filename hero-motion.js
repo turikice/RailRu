@@ -27,7 +27,7 @@
     hero.classList.add("hero--animated", "hero--entering")
     const photo = new Image()
     const revealCamera = () => hero.classList.add("hero--camera-ready")
-    photo.src = "./assets/d6f89.png"
+    photo.src = "./assets/hero-train-v3.jpg"
     if (typeof photo.decode === "function") photo.decode().then(revealCamera, revealCamera)
     else if (photo.complete) revealCamera()
     else {
