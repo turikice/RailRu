@@ -1,0 +1,20 @@
+.contacts-page .site-header{min-height:92px}
+.contacts-page .site-nav,.contacts-page .languages{color:#fff;background:#0008}
+.contacts-page .site-nav a[aria-current="page"]{color:#c1f577}
+.contacts-page .mobile-nav{color:#fff}
+.contacts-main{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;min-height:1320px;padding-top:112px;padding-bottom:180px}
+.contacts-copy h1{max-width:533px;margin:24px 0 36px;font-size:64px;line-height:64px;font-weight:600;letter-spacing:-3.2px}
+.contacts-lead{max-width:668px;margin-bottom:0;color:var(--muted);font-size:18px;line-height:24px;letter-spacing:-.36px}
+.contacts-details{display:flex;flex-direction:column;gap:46px;margin-top:60px}
+.contacts-details section{max-width:540px}
+.contacts-details h2{margin:0 0 12px}
+.contacts-details p,.contacts-details address,.contacts-details a{margin:0;font-size:18px;line-height:24px;letter-spacing:-.36px;font-style:normal}
+.contacts-details address{max-width:491px}
+.contacts-details a:hover{color:var(--accent)}
+.contacts-map{position:relative;align-self:start;aspect-ratio:1;margin-top:90px;background:#d5d5d5}
+.contacts-map iframe{display:block;width:100%;height:100%;position:absolute;inset:0;border:0}
+.contacts-map__link{position:absolute;right:16px;bottom:20px;left:16px;width:fit-content;max-width:calc(100% - 32px);margin:auto;padding:14px 18px;background:#fff;box-shadow:0 3px 20px #0002;border-radius:12px;font-size:14px;line-height:20px}
+@media(max-width:1700px){.contacts-main{min-height:1160px}.contacts-copy h1{font-size:56px;line-height:56px}.contacts-details{gap:36px;margin-top:44px}}
+@media(max-width:1150px){.contacts-main{gap:28px;padding-top:90px;padding-bottom:100px;min-height:1000px}.contacts-copy h1{font-size:46px;line-height:48px;letter-spacing:-2.3px}.contacts-map{margin-top:90px}.contacts-details p,.contacts-details address,.contacts-details a{font-size:16px;line-height:23px}.contacts-lead{font-size:16px;line-height:23px}}
+@media(max-width:900px){.contacts-page .menu-toggle{background:var(--dark);color:#fff}.contacts-main{grid-template-columns:1fr;gap:48px;padding-top:72px;padding-bottom:72px;min-height:0}.contacts-copy h1{max-width:560px;font-size:44px;line-height:46px;letter-spacing:-2.2px}.contacts-details{gap:32px;margin-top:40px}.contacts-map{margin-top:0;aspect-ratio:1;min-height:340px}.contacts-map__link{font-size:13px;padding:12px 14px}}
+@media(max-width:420px){.contacts-copy h1{font-size:38px;line-height:40px;letter-spacing:-1.9px}.contacts-main{padding-top:56px}.contacts-map{min-height:320px}}

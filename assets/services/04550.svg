@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="15.7" height="27.7" viewBox="0 0 15.7 27.7" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="wheat">
+<path id="stem" d="M7.85001 7.85V26.85" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" stroke="#8BBF41"/>
+<path id="top-grain" d="M7.85001 0.85C4.55001 3.35 4.55001 5.85 7.85001 7.85C11.15 5.85 11.15 3.35 7.85001 0.85Z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" stroke="#8BBF41"/>
+<path id="upper-left-grain" d="M0.850006 6.85C4.55001 6.65 7.15001 8.95 7.85001 11.85C4.15001 12.05 1.55001 9.75 0.850006 6.85Z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" stroke="#8BBF41"/>
+<path id="upper-right-grain" d="M14.85 6.85C11.15 6.65 8.55001 8.95 7.85001 11.85C11.55 12.05 14.15 9.75 14.85 6.85Z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" stroke="#8BBF41"/>
+<path id="middle-left-grain" d="M0.850006 12.85C4.55001 12.65 7.15001 14.95 7.85001 17.85C4.15001 18.05 1.55001 15.75 0.850006 12.85Z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" stroke="#8BBF41"/>
+<path id="middle-right-grain" d="M14.85 12.85C11.15 12.65 8.55001 14.95 7.85001 17.85C11.55 18.05 14.15 15.75 14.85 12.85Z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" stroke="#8BBF41"/>
+<path id="lower-left-grain" d="M0.850006 18.85C4.55001 18.65 7.15001 20.95 7.85001 23.85C4.15001 24.05 1.55001 21.75 0.850006 18.85Z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" stroke="#8BBF41"/>
+<path id="lower-right-grain" d="M14.85 18.85C11.15 18.65 8.55001 20.95 7.85001 23.85C11.55 24.05 14.15 21.75 14.85 18.85Z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" stroke="#8BBF41"/>
+</g>
+</svg>
