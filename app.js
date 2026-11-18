@@ -36,6 +36,7 @@ document.querySelectorAll(".cargo-card").forEach((card) => {
   })
 })
 
+const fleetTapMode = window.matchMedia("(max-width: 900px), (hover: none)")
 const fleetTabs = [...document.querySelectorAll(".fleet-tab")]
 const fleetPanel = document.querySelector("#fleet-panel")
 const fleetCount = document.querySelector("#fleet-count")
@@ -79,11 +80,11 @@ function selectFleetTab(index) {
 
 fleetTabs.forEach((tab, index) => {
   tab.addEventListener("pointerenter", (event) => {
-    if (event.pointerType === "mouse") selectFleetTab(index)
+    if (event.pointerType === "mouse" && !fleetTapMode.matches) selectFleetTab(index)
   })
   tab.addEventListener("click", (event) => {
     selectFleetTab(index)
-    fleetTabs.forEach(item => item.classList.toggle("is-tapped", item === tab && event.pointerType === "touch"))
+    fleetTabs.forEach(item => item.classList.toggle("is-tapped", item === tab && (fleetTapMode.matches || event.pointerType === "touch")))
   })
   tab.addEventListener("keydown", (event) => {
     if (!["ArrowDown", "ArrowUp", "Home", "End"].includes(event.key)) return

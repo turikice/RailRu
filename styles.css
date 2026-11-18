@@ -94,14 +94,18 @@ h2{font-size:64px;font-weight:600;line-height:1;letter-spacing:-3.2px}
 .fleet-tabs{display:flex;flex-direction:column}
 .fleet-tab{display:flex;align-items:center;gap:40px;width:100%;min-height:96px;padding:24px;border:0;border-top:1px solid #ffffff1a;background:transparent;color:#fff;text-align:left}
 .fleet-tab:last-child{border-bottom:1px solid #ffffff1a}
-.fleet-tab:hover,.fleet-tab.is-active{background:#ffffff08}
+.fleet-tab.is-active{background:#ffffff08}
 .fleet-tab__number{min-width:22px;color:var(--accent);font-size:16px;font-weight:600;line-height:20px}
 .fleet-tab__copy{display:flex;flex-direction:column}
 .fleet-tab__copy strong{font-size:24px;font-weight:500;line-height:28px;letter-spacing:-1.2px}
 .fleet-tab__copy small{max-height:0;margin-top:0;overflow:hidden;opacity:0;visibility:hidden;color:#eaeaea;font-size:16px;line-height:20px;letter-spacing:-.32px;transition:max-height .3s ease,margin-top .3s ease,opacity .3s ease,visibility .3s}
-.fleet-tab:is(:hover,:focus-visible) .fleet-tab__copy small,
-.fleet-tab.is-active.is-tapped .fleet-tab__copy small,
-.fleet__grid:has(.fleet-visual__stage:is(:hover,:focus-visible)) .fleet-tab.is-active .fleet-tab__copy small{max-height:60px;margin-top:12px;opacity:1;visibility:visible}
+.fleet-tab:focus-visible .fleet-tab__copy small,
+.fleet-tab.is-active.is-tapped .fleet-tab__copy small{max-height:60px;margin-top:12px;opacity:1;visibility:visible}
+@media(min-width:901px) and (hover:hover){
+  .fleet-tab:hover{background:#ffffff08}
+  .fleet-tab:hover .fleet-tab__copy small,
+  .fleet__grid:has(.fleet-visual__stage:is(:hover,:focus-visible)) .fleet-tab.is-active .fleet-tab__copy small{max-height:60px;margin-top:12px;opacity:1;visibility:visible}
+}
 .fleet-visual{position:relative;height:889px;margin-top:66px;border:1px solid #ffffff1a}
 .fleet-visual__stage{position:absolute;inset:54px 0 56px;overflow:hidden;cursor:grab;touch-action:pan-y}
 .fleet-visual__stage:active{cursor:grabbing}
